@@ -1,0 +1,175 @@
+/* body{
+  background-image: url('bckimg.jpg');
+}
+ */
+
+main {
+  margin: 0;
+}
+body{
+  height: 1000px;
+}
+.intro-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 180px;
+}
+.intro-div h1 {
+  width: 412px;
+  height: 41px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 37px;
+  text-align: center;
+  margin: 0%;
+
+  color: #293264;
+}
+.intro-div h3 {
+  width: 318px;
+  height: 19px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #293264;
+}
+.button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-for-start {
+  width: 193px;
+  height: 52px;
+  border: none;
+  background: #4d5b9e;
+  border-radius: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  cursor: pointer;
+  color: #f5f7fb;
+  transition: transform 0.3s ease 0s;
+}
+.button-div button:hover {
+  transform: translateY(+8px);
+  color: greenyellow;
+}
+
+.body-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  
+  justify-content: center;
+  margin-top: 40px;
+}
+
+
+.question-div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  
+  justify-content: center;
+}
+.question-div .question h3 {
+  width: 450px;
+  /* height: 19px; */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #293264;
+}
+
+
+.option-div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.options {
+  display: flex;
+  cursor: pointer;
+  border: 1px solid #293264;
+  min-width: 100px;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  max-height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+
+  color: #293264;
+}
+
+hr {
+  width: 450px;
+  /* height: 2px; */
+  border: 0.794239px solid #dbdef0;
+  transform: rotate(-0.05deg);
+}
+
+.question-div .question{
+  display: flex;
+  min-height: 80px;
+  width: 100%;
+}
+
+
+.loading{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loading img{
+  width: 200px;
+  background: white;
+  height: 200px;
+  
+}
+
+
+
+.Checked{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checked-text {
+  /* width: 450px; */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #293264;
+}
