@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button ";
 import useFetchQuestions from "./useFetchQuestions";
 import Checked from "./AfterChecked";
-// import Loading from "./loading";
+
 import Waiting from "./Waiting";
 
 export default function Body() {
@@ -12,8 +12,6 @@ export default function Body() {
   const [selectedOption, setSelectedOption] = React.useState({});
   const [selectedOptionIndex, setSelectedOptionIndex] = React.useState({});
   const [isSubmitted, setIsSubmitted] = React.useState(false);
-
-  const [correctAnsColor, setCorrectAnsColor] = React.useState("");
 
   const [score, setScore] = React.useState(0);
   const [options, setOptions] = React.useState([]);
@@ -98,29 +96,17 @@ export default function Body() {
                             selectedOptionIndex[questionIndex] === optionIndex
                               ? selectedOption[questionIndex] === option
                                 ? isSubmitted === true
-                                  ? selectedOption[questionIndex] === correctAns[questionIndex]
+                                  ? selectedOption[questionIndex] ===
+                                    correctAns[questionIndex]
                                     ? "lightGreen"
                                     : "red"
                                   : "lightGreen"
                                 : "white"
-                              : correctAns[questionIndex] === option && isSubmitted === true
-                                ? "lightGreen"
-                                : "white"
-
-
-                                // backgroundColor:
-                                // selectedOptionIndex[questionIndex] === optionIndex
-                                //   ? selectedOption[questionIndex] === option
-                                //     ? isSubmitted === true
-                                //       ? selectedOption[questionIndex] ===
-                                //         correctAns[questionIndex]
-                                //         ? "lightGreen"
-                                //         : "red"
-                                //       : "lightGreen"
-                                //     : "white"
-                                //   : "white", backupcodee
+                              : correctAns[questionIndex] === option &&
+                                isSubmitted === true
+                              ? "lightGreen"
+                              : "white",
                         }}
-                        
                         onClick={() => {
                           setOptionIndex(questionIndex, optionIndex);
                           handleClick(questionIndex, option);
